@@ -1,5 +1,10 @@
 # 🏠 Immobilien-Bewerbungsbot
 
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://selenium.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+
 Ein vollautomatisierter Python-Bot, der neue Immobilienangebote auf Immonet (und optional ImmobilienScout24) überwacht und automatisch Bewerbungen mit personalisierten Daten versendet. Das Tool richtet sich an alle, die ihre Wohnungssuche effizienter und zeitsparender gestalten möchten.
 
 ---
