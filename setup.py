@@ -17,7 +17,7 @@ from pathlib import Path
 def check_python_version():
     """Prüft die Python-Version"""
     if sys.version_info < (3, 8):
- print(" Python 3.8 oder höher ist erforderlich!")
+ print("Python 3.8 oder höher ist erforderlich!")
         print(f"Aktuelle Version: {sys.version}")
         sys.exit(1)
  print(f" Python-Version: {sys.version}")
@@ -31,7 +31,7 @@ def install_requirements():
         subprocess.check_call([
             sys.executable, "-m", "pip", "install", "-r", "requirements.txt"
         ])
- print(" Alle Pakete erfolgreich installiert!")
+ print("Alle Pakete erfolgreich installiert!")
     except subprocess.CalledProcessError as e:
  print(f" Fehler beim Installieren der Pakete: {e}")
         sys.exit(1)
@@ -52,16 +52,16 @@ def check_chrome_driver():
         
         driver = webdriver.Chrome(options=chrome_options)
         driver.quit()
- print(" ChromeDriver ist verfügbar!")
+ print("ChromeDriver ist verfügbar!")
         
     except Exception as e:
  print(f"️ ChromeDriver-Problem: {e}")
  print("\n Lösungsvorschläge:")
         print("1. Installieren Sie Google Chrome")
         print("2. Installieren Sie ChromeDriver:")
-        print("   - Ubuntu/Debian: sudo apt-get install chromium-chromedriver")
-        print("   - macOS: brew install chromedriver")
-        print("   - Windows: Laden Sie ChromeDriver von https://chromedriver.chromium.org/ herunter")
+        print("- Ubuntu/Debian: sudo apt-get install chromium-chromedriver")
+        print("- macOS: brew install chromedriver")
+        print("- Windows: Laden Sie ChromeDriver von https://chromedriver.chromium.org/ herunter")
 
 
 def create_directories():
@@ -243,23 +243,23 @@ echo "Bot beendet."
     
     # Ausführbar machen
     os.chmod("start_bot.sh", 0o755)
- print(" Start-Skript erstellt: start_bot.sh")
+ print("Start-Skript erstellt: start_bot.sh")
 
 
 def show_next_steps():
     """Zeigt die nächsten Schritte an"""
     print("\n" + "="*60)
- print(" SETUP ABGESCHLOSSEN!")
+ print("SETUP ABGESCHLOSSEN!")
     print("="*60)
  print("\n Nächste Schritte:")
     print("1. Bearbeiten Sie config.yaml und tragen Sie Ihre echten Daten ein")
     print("2. Für E-Mail-Benachrichtigungen:")
-    print("   - Gmail: Aktivieren Sie 2FA und erstellen Sie ein App-Passwort")
-    print("   - Andere: Passen Sie SMTP-Einstellungen in config.yaml an")
+    print("- Gmail: Aktivieren Sie 2FA und erstellen Sie ein App-Passwort")
+    print("- Andere: Passen Sie SMTP-Einstellungen in config.yaml an")
     print("3. Starten Sie den Bot:")
-    print("   - Linux/macOS: ./start_bot.sh")
-    print("   - Windows: python immobilien_bot_main.py")
-    print("   - Oder: python3 immobilien_bot_main.py")
+    print("- Linux/macOS: ./start_bot.sh")
+    print("- Windows: python immobilien_bot_main.py")
+    print("- Oder: python3 immobilien_bot_main.py")
  print("\n️ WICHTIGE HINWEISE:")
     print("- Verwenden Sie den Bot verantwortungsvoll")
     print("- Respektieren Sie die Nutzungsbedingungen der Websites")
@@ -271,7 +271,7 @@ def show_next_steps():
 
 def main():
     """Hauptfunktion des Setup-Skripts"""
- print(" Immobilien-Bewerbungsbot Setup")
+ print("Immobilien-Bewerbungsbot Setup")
     print("="*40)
     
     # Prüfungen

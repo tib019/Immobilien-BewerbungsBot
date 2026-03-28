@@ -46,10 +46,10 @@ def test_database():
         bereits_beworben = db.ist_bereits_beworben("test123")
         
         if bereits_beworben:
- print(" Datenbank-Test erfolgreich!")
+ print("Datenbank-Test erfolgreich!")
             return True
         else:
- print(" Datenbank-Test fehlgeschlagen!")
+ print("Datenbank-Test fehlgeschlagen!")
             return False
             
     except Exception as e:
@@ -77,7 +77,7 @@ def test_config():
             suchstaedte=["Berlin"]
         )
         
- print(" Konfiguration erfolgreich erstellt!")
+ print("Konfiguration erfolgreich erstellt!")
         print(f"   - Name: {config.vorname} {config.nachname}")
         print(f"   - E-Mail: {config.email}")
         print(f"   - Suchstädte: {config.suchstaedte}")
@@ -105,7 +105,7 @@ def test_scraper_basic():
         
         # Session testen
         if scraper.session:
- print(" HTTP-Session erstellt")
+ print("HTTP-Session erstellt")
         
         # User-Agent testen
         user_agent = scraper.get_random_user_agent()
@@ -115,7 +115,7 @@ def test_scraper_basic():
         # Cleanup
         scraper.cleanup()
         
- print(" Scraper-Grundfunktionen erfolgreich!")
+ print("Scraper-Grundfunktionen erfolgreich!")
         return True
         
     except Exception as e:
@@ -124,7 +124,7 @@ def test_scraper_basic():
 
 def test_angebot_parsing():
     """Testet das Parsen von Angebots-Daten"""
- print(" Teste Angebots-Parsing...")
+ print("Teste Angebots-Parsing...")
     
     try:
         config = BewerbungsConfig()
@@ -154,7 +154,7 @@ def test_angebot_parsing():
             print(f"   '{text}' -> {zimmer} Zimmer")
         
         scraper.cleanup()
- print(" Angebots-Parsing erfolgreich!")
+ print("Angebots-Parsing erfolgreich!")
         return True
         
     except Exception as e:
@@ -163,7 +163,7 @@ def test_angebot_parsing():
 
 def test_email_manager():
     """Testet den E-Mail-Manager (ohne echte E-Mails zu senden)"""
- print(" Teste E-Mail-Manager...")
+ print("Teste E-Mail-Manager...")
     
     try:
         from email_manager import EmailManager
@@ -177,7 +177,7 @@ def test_email_manager():
         
         # Template-Loading testen
         if email_manager.templates:
- print(" E-Mail-Templates geladen")
+ print("E-Mail-Templates geladen")
         
         # Test-Angebot für E-Mail
         test_angebot = ImmobilienAngebot(
@@ -193,7 +193,7 @@ def test_email_manager():
             website="immonet"
         )
         
- print(" E-Mail-Manager erfolgreich initialisiert!")
+ print("E-Mail-Manager erfolgreich initialisiert!")
         return True
         
     except Exception as e:
@@ -202,7 +202,7 @@ def test_email_manager():
 
 def run_all_tests():
     """Führt alle Tests aus"""
- print(" IMMOBILIEN-BOT TESTS")
+ print("IMMOBILIEN-BOT TESTS")
     print("=" * 40)
     
     tests = [
@@ -226,7 +226,7 @@ def run_all_tests():
     
     # Ergebnisse zusammenfassen
     print("\n" + "=" * 40)
- print(" TEST-ERGEBNISSE:")
+ print("TEST-ERGEBNISSE:")
     print("=" * 40)
     
     passed = 0
