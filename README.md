@@ -1,4 +1,4 @@
-# 🏠 Immobilien-Bewerbungsbot
+# Immobilien-Bewerbungsbot
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://selenium.dev)
@@ -9,7 +9,7 @@ Ein vollautomatisierter Python-Bot, der neue Immobilienangebote auf Immonet (und
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Automatische Überwachung** von Immobilienangeboten
 - **Intelligente Filterung** nach Preis, Zimmer, Städten etc.
@@ -23,7 +23,7 @@ Ein vollautomatisierter Python-Bot, der neue Immobilienangebote auf Immonet (und
 
 ---
 
-## 🛠️ Installation
+## ️ Installation
 
 ### Voraussetzungen
 - Python 3.8 oder höher
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Konfiguration
+## ️ Konfiguration
 
 Alle Einstellungen erfolgen in der Datei `config.yaml`:
 
@@ -60,7 +60,7 @@ Beispiel siehe `config.yaml`.
 
 ---
 
-## 🏃‍♂️ Nutzung
+## ‍️ Nutzung
 
 ### Starten des Bots
 
@@ -78,7 +78,7 @@ python test_bot.py
 
 ---
 
-## 🏗️ Architektur
+## ️ Architektur
 
 - **immobilien_bot.py**: Kernklassen, Scraper, Datenbank
 - **immobilien_bot_main.py**: Hauptlogik, Scheduler
@@ -89,7 +89,7 @@ python test_bot.py
 
 ---
 
-## 📝 Rechtliche Hinweise
+## Rechtliche Hinweise
 
 - Die Nutzung kann gegen die AGB der Zielseiten verstoßen.
 - Rate-Limiting und respektvolle Nutzung werden empfohlen.
@@ -97,22 +97,22 @@ python test_bot.py
 
 ---
 
-## 📄 Lizenz
+## Lizenz
 
 MIT License – siehe LICENSE-Datei.
 
 ---
 
-## 🤝 Beitragen
+## Beitragen
 
 Pull Requests und Feature-Ideen sind willkommen!
 
 ---
 
-## 📚 Weitere Informationen
+## Weitere Informationen
 
-- Ausführliche Dokumentation: `🏠 Immobilien-Bewerbungsbot.md`
-- Projektzusammenfassung: `🏠 Immobilien-Bewerbungsbot - Projektzusammenfassung.md`
+- Ausführliche Dokumentation: ` Immobilien-Bewerbungsbot.md`
+- Projektzusammenfassung: ` Immobilien-Bewerbungsbot - Projektzusammenfassung.md`
 - Website-Analyse: `Website-Analyse für Immobilien-Bewerbungsbot.md`
 
 ---

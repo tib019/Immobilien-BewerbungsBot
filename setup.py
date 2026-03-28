@@ -17,29 +17,29 @@ from pathlib import Path
 def check_python_version():
     """Prüft die Python-Version"""
     if sys.version_info < (3, 8):
-        print("❌ Python 3.8 oder höher ist erforderlich!")
+ print(" Python 3.8 oder höher ist erforderlich!")
         print(f"Aktuelle Version: {sys.version}")
         sys.exit(1)
-    print(f"✅ Python-Version: {sys.version}")
+ print(f" Python-Version: {sys.version}")
 
 
 def install_requirements():
     """Installiert die erforderlichen Python-Pakete"""
-    print("\n📦 Installiere erforderliche Pakete...")
+ print("\n Installiere erforderliche Pakete...")
     
     try:
         subprocess.check_call([
             sys.executable, "-m", "pip", "install", "-r", "requirements.txt"
         ])
-        print("✅ Alle Pakete erfolgreich installiert!")
+ print(" Alle Pakete erfolgreich installiert!")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Fehler beim Installieren der Pakete: {e}")
+ print(f" Fehler beim Installieren der Pakete: {e}")
         sys.exit(1)
 
 
 def check_chrome_driver():
     """Prüft, ob ChromeDriver verfügbar ist"""
-    print("\n🌐 Prüfe ChromeDriver...")
+ print("\n Prüfe ChromeDriver...")
     
     try:
         from selenium import webdriver
@@ -52,11 +52,11 @@ def check_chrome_driver():
         
         driver = webdriver.Chrome(options=chrome_options)
         driver.quit()
-        print("✅ ChromeDriver ist verfügbar!")
+ print(" ChromeDriver ist verfügbar!")
         
     except Exception as e:
-        print(f"⚠️ ChromeDriver-Problem: {e}")
-        print("\n💡 Lösungsvorschläge:")
+ print(f"️ ChromeDriver-Problem: {e}")
+ print("\n Lösungsvorschläge:")
         print("1. Installieren Sie Google Chrome")
         print("2. Installieren Sie ChromeDriver:")
         print("   - Ubuntu/Debian: sudo apt-get install chromium-chromedriver")
@@ -66,7 +66,7 @@ def check_chrome_driver():
 
 def create_directories():
     """Erstellt erforderliche Verzeichnisse"""
-    print("\n📁 Erstelle Verzeichnisse...")
+ print("\n Erstelle Verzeichnisse...")
     
     directories = [
         "logs",
@@ -77,12 +77,12 @@ def create_directories():
     
     for directory in directories:
         Path(directory).mkdir(exist_ok=True)
-        print(f"✅ Verzeichnis erstellt: {directory}")
+ print(f" Verzeichnis erstellt: {directory}")
 
 
 def setup_config():
     """Hilft beim Einrichten der Konfiguration"""
-    print("\n⚙️ Konfiguration einrichten...")
+ print("\n️ Konfiguration einrichten...")
     
     config_file = "config.yaml"
     
@@ -95,7 +95,7 @@ def setup_config():
     print("\nBitte geben Sie Ihre Daten ein:")
     
     # Persönliche Daten abfragen
-    print("\n👤 Persönliche Daten:")
+ print("\n Persönliche Daten:")
     anrede = input("Anrede (Herr/Frau/Divers) [Herr]: ") or "Herr"
     vorname = input("Vorname: ")
     nachname = input("Nachname: ")
@@ -106,7 +106,7 @@ def setup_config():
     ort = input("Ort: ")
     
     # Suchkriterien abfragen
-    print("\n🔍 Suchkriterien:")
+ print("\n Suchkriterien:")
     max_preis = float(input("Maximaler Mietpreis in Euro [1500]: ") or "1500")
     min_zimmer = int(input("Mindestanzahl Zimmer [2]: ") or "2")
     max_zimmer = int(input("Maximale Anzahl Zimmer [4]: ") or "4")
@@ -123,14 +123,14 @@ def setup_config():
         suchstaedte = ["Berlin"]
     
     # E-Mail-Konfiguration
-    print("\n📧 E-Mail-Konfiguration (für Benachrichtigungen):")
+ print("\n E-Mail-Konfiguration (für Benachrichtigungen):")
     smtp_username = input("E-Mail-Adresse für Benachrichtigungen (optional): ")
     smtp_password = ""
     if smtp_username:
         smtp_password = input("App-Passwort (nicht das normale Passwort!): ")
     
     # Bewerbungstext
-    print("\n✍️ Bewerbungstext:")
+ print("\n️ Bewerbungstext:")
     print("Geben Sie Ihren Standard-Bewerbungstext ein (Enter für Standard-Text):")
     bewerbungstext = input() or f"""Sehr geehrte Damen und Herren,
 
@@ -207,12 +207,12 @@ Mit freundlichen Grüßen
     with open(config_file, 'w', encoding='utf-8') as f:
         yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
     
-    print(f"✅ Konfiguration gespeichert in {config_file}")
+ print(f" Konfiguration gespeichert in {config_file}")
 
 
 def create_start_script():
     """Erstellt ein Start-Skript"""
-    print("\n🚀 Erstelle Start-Skript...")
+ print("\n Erstelle Start-Skript...")
     
     start_script = """#!/bin/bash
 # Immobilien-Bot Starter
@@ -243,15 +243,15 @@ echo "Bot beendet."
     
     # Ausführbar machen
     os.chmod("start_bot.sh", 0o755)
-    print("✅ Start-Skript erstellt: start_bot.sh")
+ print(" Start-Skript erstellt: start_bot.sh")
 
 
 def show_next_steps():
     """Zeigt die nächsten Schritte an"""
     print("\n" + "="*60)
-    print("🎉 SETUP ABGESCHLOSSEN!")
+ print(" SETUP ABGESCHLOSSEN!")
     print("="*60)
-    print("\n📋 Nächste Schritte:")
+ print("\n Nächste Schritte:")
     print("1. Bearbeiten Sie config.yaml und tragen Sie Ihre echten Daten ein")
     print("2. Für E-Mail-Benachrichtigungen:")
     print("   - Gmail: Aktivieren Sie 2FA und erstellen Sie ein App-Passwort")
@@ -260,18 +260,18 @@ def show_next_steps():
     print("   - Linux/macOS: ./start_bot.sh")
     print("   - Windows: python immobilien_bot_main.py")
     print("   - Oder: python3 immobilien_bot_main.py")
-    print("\n⚠️ WICHTIGE HINWEISE:")
+ print("\n️ WICHTIGE HINWEISE:")
     print("- Verwenden Sie den Bot verantwortungsvoll")
     print("- Respektieren Sie die Nutzungsbedingungen der Websites")
     print("- Prüfen Sie regelmäßig die Logs")
     print("- Der Bot läuft im Hintergrund - beenden Sie ihn mit Ctrl+C")
-    print("\n📚 Weitere Informationen finden Sie in der README.md")
+ print("\n Weitere Informationen finden Sie in der README.md")
     print("="*60)
 
 
 def main():
     """Hauptfunktion des Setup-Skripts"""
-    print("🏠 Immobilien-Bewerbungsbot Setup")
+ print(" Immobilien-Bewerbungsbot Setup")
     print("="*40)
     
     # Prüfungen
@@ -294,9 +294,9 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n❌ Setup abgebrochen.")
+ print("\n\n Setup abgebrochen.")
         sys.exit(1)
     except Exception as e:
-        print(f"\n❌ Unerwarteter Fehler: {e}")
+ print(f"\n Unerwarteter Fehler: {e}")
         sys.exit(1)
 

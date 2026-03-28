@@ -1,8 +1,8 @@
-# 🏠 Immobilien-Bewerbungsbot
+# Immobilien-Bewerbungsbot
 
 Ein automatisierter Python-Bot, der neue Immobilienangebote von Immonet und ImmobilienScout24 überwacht und automatisch Bewerbungen mit vorgefertigtem Text versendet.
 
-## 📋 Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
 - [Überblick](#überblick)
 - [Features](#features)
@@ -15,7 +15,7 @@ Ein automatisierter Python-Bot, der neue Immobilienangebote von Immonet und Immo
 - [Beitragen](#beitragen)
 - [Lizenz](#lizenz)
 
-## 🎯 Überblick
+## Überblick
 
 Der Immobilien-Bewerbungsbot automatisiert den zeitaufwändigen Prozess der Wohnungssuche, indem er kontinuierlich nach neuen Angeboten sucht und automatisch qualitätsvolle Bewerbungen versendet. Das System wurde mit modernen Python-Technologien entwickelt und folgt objektorientierten Designprinzipien.
 
@@ -28,33 +28,33 @@ Der Immobilien-Bewerbungsbot automatisiert den zeitaufwändigen Prozess der Wohn
 - **Datenbank-Tracking**: Verhindert Doppelbewerbungen durch intelligente Verfolgung
 - **Anti-Detection**: Implementiert Techniken zur Umgehung von Bot-Erkennungssystemen
 
-## ✨ Features
+## Features
 
-### 🔍 Web-Scraping
+### Web-Scraping
 - **Multi-Website-Support**: Unterstützung für Immonet und ImmobilienScout24
 - **Robuste Datenextraktion**: Zuverlässige Extraktion von Angebotsdaten
 - **Anti-Bot-Maßnahmen**: User-Agent-Rotation und intelligente Verzögerungen
 - **Fehlerbehandlung**: Umfassende Fehlerbehandlung und Wiederherstellung
 
-### 🤖 Automatisierung
+### Automatisierung
 - **Formular-Ausfüllung**: Automatisches Ausfüllen von Bewerbungsformularen
 - **Personalisierte Nachrichten**: Vorgefertigte, anpassbare Bewerbungstexte
 - **Zeitgesteuerte Ausführung**: Konfigurierbare Intervalle für automatische Durchläufe
 - **Rate Limiting**: Respektvolle Anfrage-Frequenz zum Schutz der Zielwebsites
 
-### 📊 Datenmanagement
+### Datenmanagement
 - **SQLite-Datenbank**: Lokale Speicherung aller Bewerbungsdaten
 - **Duplikatserkennung**: Verhindert mehrfache Bewerbungen auf dasselbe Angebot
 - **Statistiken**: Detaillierte Tracking- und Reporting-Funktionen
 - **Backup-System**: Automatische Datensicherung
 
-### 📧 Benachrichtigungen
+### Benachrichtigungen
 - **E-Mail-Alerts**: Sofortige Benachrichtigungen über neue Bewerbungen
 - **HTML-Templates**: Professionell gestaltete E-Mail-Vorlagen
 - **Tages-/Wochenberichte**: Regelmäßige Zusammenfassungen der Bot-Aktivitäten
 - **Fehler-Benachrichtigungen**: Automatische Meldung bei Problemen
 
-## 🚀 Installation
+## Installation
 
 ### Systemanforderungen
 
@@ -104,7 +104,7 @@ Falls die automatische Installation nicht funktioniert:
    mkdir logs templates backups data
    ```
 
-## ⚙️ Konfiguration
+## ️ Konfiguration
 
 ### Grundkonfiguration
 
@@ -182,7 +182,7 @@ bot:
     immobilienscout24: false         # Aufgrund Bot-Erkennung
 ```
 
-## 🎮 Verwendung
+## Verwendung
 
 ### Erster Start
 
@@ -264,7 +264,7 @@ bot.zeige_statistiken()
 "
 ```
 
-## 🏗️ Architektur
+## ️ Architektur
 
 ### Klassenstruktur
 
@@ -343,7 +343,7 @@ Das System folgt einer modularen, objektorientierten Architektur:
 - **Verschlüsselung**: Passwörter werden sicher gespeichert
 - **Minimale Datensammlung**: Nur notwendige Informationen werden gespeichert
 
-## ⚖️ Rechtliche Hinweise
+## ️ Rechtliche Hinweise
 
 ### Nutzungsbedingungen
 
@@ -373,7 +373,7 @@ Die Entwickler dieses Bots übernehmen keine Verantwortung für:
 
 **Verwendung auf eigene Gefahr**: Benutzer sind vollständig verantwortlich für die Verwendung dieses Tools und alle daraus resultierenden Konsequenzen.
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Häufige Probleme
 
@@ -450,7 +450,7 @@ bot:
     max: 120
 ```
 
-## 🤝 Beitragen
+## Beitragen
 
 ### Entwicklung
 
@@ -472,18 +472,18 @@ Das Projekt ist offen für Beiträge. Bereiche für Verbesserungen:
 
 ```
 immobilien-bot/
-├── immobilien_bot.py          # Hauptklassen und Scraper
-├── immobilien_bot_main.py     # Orchestrator und Hauptlogik
-├── email_manager.py           # E-Mail-Funktionalitäten
-├── config.yaml               # Konfigurationsdatei
-├── setup.py                  # Installations-Skript
-├── test_bot.py              # Test-Suite
-├── requirements.txt         # Python-Abhängigkeiten
-├── README.md               # Diese Dokumentation
-├── logs/                   # Log-Dateien
-├── templates/             # E-Mail-Templates
-├── backups/              # Datenbank-Backups
-└── data/                # Zusätzliche Daten
+ immobilien_bot.py # Hauptklassen und Scraper
+ immobilien_bot_main.py # Orchestrator und Hauptlogik
+ email_manager.py # E-Mail-Funktionalitäten
+ config.yaml # Konfigurationsdatei
+ setup.py # Installations-Skript
+ test_bot.py # Test-Suite
+ requirements.txt # Python-Abhängigkeiten
+ README.md # Diese Dokumentation
+ logs/ # Log-Dateien
+ templates/ # E-Mail-Templates
+ backups/ # Datenbank-Backups
+ data/ # Zusätzliche Daten
 ```
 
 ### Coding-Standards
@@ -494,22 +494,22 @@ immobilien-bot/
 - **Error Handling**: Robuste Fehlerbehandlung
 - **Testing**: Unit-Tests für alle neuen Features
 
-## 📄 Lizenz
+## Lizenz
 
 Dieses Projekt steht unter der MIT-Lizenz. Siehe LICENSE-Datei für Details.
 
 ### MIT-Lizenz Zusammenfassung
 
-- ✅ **Kommerzielle Nutzung**: Erlaubt
-- ✅ **Modifikation**: Erlaubt
-- ✅ **Distribution**: Erlaubt
-- ✅ **Private Nutzung**: Erlaubt
-- ❌ **Haftung**: Ausgeschlossen
-- ❌ **Garantie**: Keine Gewährleistung
+- **Kommerzielle Nutzung**: Erlaubt
+- **Modifikation**: Erlaubt
+- **Distribution**: Erlaubt
+- **Private Nutzung**: Erlaubt
+- **Haftung**: Ausgeschlossen
+- **Garantie**: Keine Gewährleistung
 
 ---
 
-## 📞 Support
+## Support
 
 ### Community
 

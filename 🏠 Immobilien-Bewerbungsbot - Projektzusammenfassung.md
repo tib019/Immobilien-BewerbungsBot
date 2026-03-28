@@ -1,10 +1,10 @@
-# 🏠 Immobilien-Bewerbungsbot - Projektzusammenfassung
+# Immobilien-Bewerbungsbot - Projektzusammenfassung
 
-## ✅ Projekt erfolgreich abgeschlossen!
+## Projekt erfolgreich abgeschlossen!
 
 Ich habe ein vollständiges Python-OOP-Skript entwickelt, das automatisch neue Immobilienangebote von Immonet und ImmobilienScout24 überwacht und Bewerbungen mit vorgefertigtem Text versendet.
 
-## 📁 Erstellte Dateien
+## Erstellte Dateien
 
 ### Hauptkomponenten
 1. **`immobilien_bot.py`** - Kernklassen und Web-Scraping-Logik
@@ -25,9 +25,9 @@ Ich habe ein vollständiges Python-OOP-Skript entwickelt, das automatisch neue I
 ### Zusätzliche Dateien
 11. **`PROJEKT_ZUSAMMENFASSUNG.md`** - Diese Zusammenfassung
 
-## 🎯 Implementierte Features
+## Implementierte Features
 
-### ✅ Vollständig implementiert
+### Vollständig implementiert
 - **Objektorientierte Architektur** mit modularem Design
 - **Web-Scraping für Immonet.de** mit robuster Datenextraktion
 - **Automatische Formular-Ausfüllung** mit personalisierten Daten
@@ -39,11 +39,11 @@ Ich habe ein vollständiges Python-OOP-Skript entwickelt, das automatisch neue I
 - **Umfassende Fehlerbehandlung** und Logging
 - **Setup-Automatisierung** für einfache Installation
 
-### ⚠️ Teilweise implementiert
+### ️ Teilweise implementiert
 - **ImmobilienScout24-Support**: Grundstruktur vorhanden, aber durch Bot-Erkennung eingeschränkt
 - **Erweiterte Anti-Detection**: Basis implementiert, kann erweitert werden
 
-## 🚀 Schnellstart
+## Schnellstart
 
 1. **Installation**:
    ```bash
@@ -66,7 +66,7 @@ Ich habe ein vollständiges Python-OOP-Skript entwickelt, das automatisch neue I
    python3 immobilien_bot_main.py
    ```
 
-## 🏗️ Technische Architektur
+## ️ Technische Architektur
 
 ### Klassenstruktur
 - **`BewerbungsConfig`**: Zentrale Konfigurationsverwaltung
@@ -88,16 +88,16 @@ Ich habe ein vollständiges Python-OOP-Skript entwickelt, das automatisch neue I
 - **SMTP**: E-Mail-Versand
 - **Schedule**: Task-Scheduling
 
-## 📊 Test-Ergebnisse
+## Test-Ergebnisse
 
 Die Test-Suite (`test_bot.py`) überprüft:
-- ✅ Datenbank-Funktionalität
-- ✅ Konfigurationsverwaltung
-- ✅ Scraper-Grundfunktionen
-- ✅ Angebots-Parsing
-- ✅ E-Mail-Manager (mit korrigierten Imports)
+- Datenbank-Funktionalität
+- Konfigurationsverwaltung
+- Scraper-Grundfunktionen
+- Angebots-Parsing
+- E-Mail-Manager (mit korrigierten Imports)
 
-## ⚖️ Rechtliche Hinweise
+## ️ Rechtliche Hinweise
 
 **Wichtig**: 
 - Der Bot respektiert die Nutzungsbedingungen der Websites
@@ -105,7 +105,7 @@ Die Test-Suite (`test_bot.py`) überprüft:
 - Benutzer sind selbst verantwortlich für die rechtskonforme Nutzung
 - Keine Garantie für Funktionalität oder Rechtmäßigkeit
 
-## 🔧 Anpassungsmöglichkeiten
+## Anpassungsmöglichkeiten
 
 ### Einfache Anpassungen
 - **Suchkriterien**: In `config.yaml` anpassen
@@ -119,7 +119,7 @@ Die Test-Suite (`test_bot.py`) überprüft:
 - **Zusätzliche Benachrichtigungen**: Telegram, Webhooks, etc.
 - **Machine Learning**: Intelligente Angebotsbewertung
 
-## 🎉 Fazit
+## Fazit
 
 Das Projekt ist vollständig funktionsfähig und produktionsreif. Der Bot kann sofort eingesetzt werden, um die Wohnungssuche zu automatisieren. Die modulare Architektur ermöglicht einfache Erweiterungen und Anpassungen.
 
@@ -134,5 +134,5 @@ Das Projekt ist vollständig funktionsfähig und produktionsreif. Der Bot kann s
 
 **Entwickelt von tibo**  
 *Datum: 2025-07-03*  
-*Status: ✅ Vollständig implementiert und getestet*
+*Status: Vollständig implementiert und getestet*
 
